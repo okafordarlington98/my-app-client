@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "title": "Afro-Pop Festival",
+      "date": "2026-07-20",
+      "location": "Hamburg, Germany",
+      "description": "Experience the vibrant rhythms and melodies of Afro-Pop music at the annual festival in Hamburg. Featuring top artists from across Africa, this event promises an unforgettable celebration of culture and music."  
+    },
+    {
+      "id": "2",
+      "title": "Kenako Africa Festival",
+      "date": "2026-09-18",
+      "location": "Berlin, Germany",
+      "description": "Kenako Africa Festival is one of Germany's largest celebrations of African culture, bringing together music, art, food, fashion, and entrepreneurship from across the African continent and diaspora. Held in Berlin, the festival offers live performances, cultural exhibitions, workshops, and a vibrant marketplace, creating a unique space for cultural exchange, community engagement, and the promotion of African creativity and innovation."  
+    },
+    {
+      "id": "3",
+      "title": "African Film Festival",
+      "date": "2026-11-10",
+      "location": "Frankfurt, Germany",
+      "description": "The African Film Festival in Frankfurt showcases a diverse range of films from across the African continent, highlighting the rich storytelling traditions and contemporary cinematic talents. The festival features screenings, panel discussions, and workshops, providing a platform for filmmakers to share their stories and engage with audiences."  
+    },
+    {
+      "id": "4",
+      "title": "African Food Festival",
+      "date": "2026-08-15",
+      "location": "Cologne, Germany",
+      "description": "The African Food Festival in Cologne celebrates the rich culinary traditions of Africa, offering a diverse array of dishes from various regions of the continent. The festival features food stalls, cooking demonstrations, and cultural performances, providing a vibrant and immersive experience for food lovers and culture enthusiasts alike."
+    },
+    {
+      "id": "5",
+      "title": "African Art Exhibition",
+      "date": "2026-10-05",
+      "location": "Düsseldorf, Germany",
+      "description": "The African Art Exhibition in Düsseldorf showcases a wide range of contemporary and traditional African art, including paintings, sculptures, textiles, and photography. The exhibition provides a platform for African artists to share their work with a global audience and promotes cultural exchange and appreciation."
+    },
+    {
+      "id": "6",
+      "title": "African Music Concert",
+      "date": "2026-12-01",
+      "location": "Stuttgart, Germany",
+      "description": "The African Music Concert in Stuttgart features live performances by renowned African musicians and bands, offering a vibrant and energetic celebration of African music. The concert includes a variety of genres, from traditional to contemporary, providing an unforgettable experience for music lovers."
+    }
+  ]
+}
