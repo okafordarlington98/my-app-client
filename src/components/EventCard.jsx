@@ -1,13 +1,32 @@
 import { Link } from "react-router-dom";
 
-function EventCard(props) {
+function EventCard({ event, isFavorite, onToggleFavorite }) {
 
     return (
         <div className="EventCard card">
-            <Link to={`/events/${props.event.id}`}>
-                <h3>{props.event.title}</h3>
-            </Link>
-            <p>{props.event.description}</p>
+
+            <div className="card-header">
+                <Link to={`/events/${event.id}`}>
+                    <h3>{event.title}</h3>
+                </Link>
+
+                <button
+                    className={`fav-btn ${isFavorite ? "active" : ""}`}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                        onToggleFavorite();
+                    }}
+                >
+                    {isFavorite ? "⭐" : "☆"}
+                </button>
+            </div>
+
+            <p>{event.description}</p>
+
+            <p className="meta">📍 {event.location}</p>
+            <p className="meta">📅 {event.date}</p>
+
         </div>
     );
 }
