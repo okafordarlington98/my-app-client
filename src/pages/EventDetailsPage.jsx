@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import axios from "axios"; // used for calling the API
 
 import AddEvent from "../components/AddEvent"; // for rendering Event Add Form
-import EventCard from "../components/EventCard"; // for rendering Event List
+
 
 function EventDetailsPage () {
 
@@ -21,21 +21,22 @@ function EventDetailsPage () {
 
       // call the API here to receive event details...
       const response = await axios.get(`${import.meta.env.VITE_SERVER_URL}/events/${eventId}`
-      )
+      );
 
-      console.log(response.data)
+      //console.log(response.data)
 
       setEvent(response.data)
 
-      setIsLoading(false) // render the component once the data finished loading
+      //setIsLoading(false) // render the component once the data finished loading
 
     } catch (error) {
       console.log(error)
       //todo proper error handling here
+      setIsLoading(false);
     }
   }
 
-if (isLoading) return <h3>Loading...</h3> //todo proper loading animation here
+
   
   return (
     <div className="EventDetailsPage">
@@ -49,9 +50,7 @@ if (isLoading) return <h3>Loading...</h3> //todo proper loading animation here
 
       {/* example of a single EventCard being rendered */}
       {/* <EventCard /> */}
-      {event.map((task) => {
-        return <EventCard key={event.id}/>
-      })}
+
 
       {/* ... form for adding a new Task should be rendered here    */}
       <AddEvent eventId={event.id} getData={getData}/>
