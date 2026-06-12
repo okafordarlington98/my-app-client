@@ -1,5 +1,8 @@
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 import { useState } from "react";
 import axios from "axios";
+
 
 function AddEvent(props) {
 
@@ -32,10 +35,10 @@ function AddEvent(props) {
     };
 
     return (
-        <div className="AddEvent">
+        <Form.Group className="AddEvent">
             <h3>Add New Event</h3>
 
-            <form onSubmit={handleSubmit}>
+            <Form onSubmit={handleSubmit}>
                 <label>Title:</label>
                 <input
                 type="text"
@@ -52,9 +55,9 @@ function AddEvent(props) {
                 onChange={(e) => setDescription(e.target.value)}
                 />
 
-                <button type="submit">Add Event</button>
-            </form>
-        </div>
+                <Button variant="success">Add Event</Button>
+            </Form>
+        </Form.Group>
     );
 }
 
